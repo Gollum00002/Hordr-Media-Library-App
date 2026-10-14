@@ -494,4 +494,4 @@ contract. Enable by placing plugin directories under `<home>/plugins/`
 
 ## License
 
-AGPL-3.0-only, matching upstream Stash.
+AGPL-3.0
