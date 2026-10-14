@@ -78,6 +78,12 @@ installs Hordr and keeps it current:
   latest release.
 - It is safe to re-run at any time.
 
+Or
+
+If you want to install it manually then download the latest release build
+and extract it to a folder, To update, extract the zip to the existing
+folder and replace all.
+
 Your media files are never moved, modified or deleted — Hordr only
 reads them. Database schema changes are applied automatically the next
 time the program starts.
