@@ -479,6 +479,19 @@ implementation and `proto/stash/plugin/v1/plugin.proto` for the
 contract. Enable by placing plugin directories under `<home>/plugins/`
 (or add paths to `[plugins] paths`).
 
+## Previews
+
+<img width="1600" height="900" alt="home" src="https://github.com/user-attachments/assets/dc54a318-0130-471f-accb-85213d3d7e87" />
+<img width="1600" height="900" alt="scenes" src="https://github.com/user-attachments/assets/5f2f66f0-bba1-4126-a276-22579f909576" />
+<img width="1600" height="900" alt="studios" src="https://github.com/user-attachments/assets/a32b0e38-3fe2-4178-bb48-52d49a87a182" />
+<img width="1600" height="900" alt="performers" src="https://github.com/user-attachments/assets/97667496-5cd6-48fd-b445-dfb12732c311" />
+<img width="1600" height="900" alt="images" src="https://github.com/user-attachments/assets/e957927c-d640-4643-b3d6-cfe8bd4d9ac6" />
+<img width="1600" height="900" alt="themes" src="https://github.com/user-attachments/assets/da1bd6a7-1868-423a-971a-1c5ace8090e1" />
+
+
+
+
+
 ## License
 
 AGPL-3.0-only, matching upstream Stash.
