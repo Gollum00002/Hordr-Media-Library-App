@@ -89,44 +89,14 @@ Your media files are never moved, modified or deleted — Hordr only
 reads them. Database schema changes are applied automatically the next
 time the program starts.
 
-Confirm the result with:
-
-```bash
-hordr --version
-hordr doctor
-```
-
-### Manual installation
-
-Download the release archive, extract it and run the binary from the
-`bin/` directory:
-
-```bash
-./bin/hordr serve
-```
-
-### Docker
-
-```bash
-docker compose up -d
-```
-
-The image builds and starts on port 9998. State (config, database,
-generated files) persists in the `stashrs-data` volume; mount your
-library at `/library` (set `HORDR_LIBRARY` or edit the compose file),
-then add `/library` as a library path in the UI. For NVIDIA hardware
-transcoding, use the overlay compose file (requires the NVIDIA
-Container Toolkit):
-
-```bash
-docker compose -f docker-compose.yml -f docker-compose.nvidia.yml up -d
-```
-
 ## First start
 
 ```bash
 hordr serve
 ```
+Or
+
+Double click the Hordr executable file
 
 The server listens on `0.0.0.0:9999` by default and opens the UI at
 <http://127.0.0.1:9999/> in your browser. The startup banner also
