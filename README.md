@@ -91,11 +91,6 @@ time the program starts.
 
 ## First start
 
-```bash
-hordr serve
-```
-Or
-
 Double click the Hordr executable file
 
 The server listens on `0.0.0.0:9999` by default and opens the UI at
