@@ -77,7 +77,7 @@ The `install-update.sh` script, available on the project's GitHub page,
 installs Hordr and keeps it current:
 
 ```bash
-bash install-update.sh
+./install-update.sh
 ```
 
 - On a system without Hordr, the script installs the latest release.
