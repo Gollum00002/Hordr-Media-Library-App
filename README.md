@@ -60,15 +60,6 @@ You do **not** need a Rust toolchain, protoc, a C compiler, a web server
 or a database server to run the release — those are only needed to
 build from source.
 
-Verify your system with:
-
-```bash
-hordr doctor
-```
-
-It prints the resolved app folder, config and database locations, the
-ffmpeg/ffprobe versions, and the VAAPI/NVENC probe results.
-
 ## Installation
 
 ### Install or update with install-update.sh
