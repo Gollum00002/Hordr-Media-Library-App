@@ -477,48 +477,6 @@ implementation and `proto/stash/plugin/v1/plugin.proto` for the
 contract. Enable by placing plugin directories under `<home>/plugins/`
 (or add paths to `[plugins] paths`).
 
-## Building from source
-
-Building requires the Rust toolchain and protobuf compiler:
-
-| Requirement | Purpose | Install |
-|---|---|---|
-| Rust ≥ 1.75 (rustc + cargo) | build | [rustup](https://rustup.rs) |
-| protoc ≥ 3 | compiles the plugin gRPC API | `apt install protobuf-compiler` |
-| C compiler (cc/gcc/clang) | bundled SQLite | `apt install build-essential` |
-
-```bash
-./build.sh          # verifies prerequisites, builds the release binary
-```
-
-`build.sh` options: `--debug`, `--check-only` (verify prerequisites
-only), `--skip-checks`, `--install` (installs to `~/.local/bin`).
-
-## Development
-
-```bash
-cargo test --workspace          # unit + integration tests
-bash scripts/e2e_test.sh        # full end-to-end suite (needs a demo library)
-cargo fmt && cargo clippy
-```
-
-Workspace layout:
-
-```
-crates/
-  stash-core       domain models, config, auth, themes, OSHash, filters, event bus
-  stash-db         sqlx SQLite layer: migrations + repository implementations
-  stash-scanner    library walking, filename parsing, ffprobe, thumbnails, generate
-  stash-stream     direct range streaming + HLS transcode session manager
-  stash-plugins    gRPC plugin host
-  stash-plugin-demo reference plugin (keyword tagger)
-  stash-migrate    Stash import (analyze + background job)
-  stash-server     Axum HTTP + GraphQL schema + CLI + embedded UI
-proto/stash/plugin/v1/plugin.proto   the plugin gRPC contract
-ui/        embedded static SPA (compiled into the binary; no build step)
-migrations/ sqlx SQLite migrations
-```
-
 ## License
 
 AGPL-3.0-only, matching upstream Stash.
