@@ -105,17 +105,6 @@ username and password for the server. Answering "skip" is a full answer
 **Settings → Security**. Installations upgraded from earlier versions
 are never prompted; they can opt in from Settings → Security as well.
 
-To get a feel for the app, generate the demo library (safe ffmpeg test
-patterns plus three image galleries):
-
-```bash
-hordr demo
-```
-
-Then in the UI: **Settings → Scan library**, followed by **Tag** and
-**Generate**. Each task is explicit — nothing is tagged and nothing is
-generated until you ask for it.
-
 ## Command line
 
 Running `hordr` with no subcommand starts the server (`serve`).
