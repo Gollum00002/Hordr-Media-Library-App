@@ -83,7 +83,7 @@ installs Hordr and keeps it current:
 ### Manual installation
 
 Download the latest release, extract it to a folder and run
-`./bin/hordr`. To update, extract the new release over the existing
+`./hordr`. To update, extract the new release over the existing
 folder and replace all files.
 
 ### Docker
@@ -106,7 +106,7 @@ them. Database changes are applied automatically on the next start.
 
 ## First start
 
-Run `./bin/hordr` (or double-click the executable). The server listens
+Run `./hordr` (or double-click the executable). The server listens
 on `0.0.0.0:9999` and opens <http://127.0.0.1:9999/>. The startup banner
 prints the LAN address so phones and tablets can connect; use
 `--host localhost` for a loopback-only server.
